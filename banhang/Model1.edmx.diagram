@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="f4fc01dfd5114eb2a60299510a3bc2aa" Name="Diagram1">
+        <EntityTypeShape EntityType="banhangModel.ChiTietDonHang" Width="1.5" PointX="5.25" PointY="2.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="banhangModel.DanhGia" Width="1.5" PointX="8.25" PointY="2.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="banhangModel.DanhMucSanPham" Width="1.5" PointX="0.75" PointY="3" IsExpanded="true" />
+        <EntityTypeShape EntityType="banhangModel.DonHang" Width="1.5" PointX="3" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="banhangModel.KhachHang" Width="1.5" PointX="0.75" PointY="7.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="banhangModel.SanPham" Width="1.5" PointX="3" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="banhangModel.sysdiagram" Width="1.5" PointX="5.75" PointY="6.75" IsExpanded="true" />
+        <AssociationConnector Association="banhangModel.FK__ChiTietDo__id_do__412EB0B6" ManuallyRouted="false" />
+        <AssociationConnector Association="banhangModel.FK__ChiTietDo__id_sa__4222D4EF" ManuallyRouted="false" />
+        <AssociationConnector Association="banhangModel.FK__DanhGia__id_khac__45F365D3" ManuallyRouted="false" />
+        <AssociationConnector Association="banhangModel.FK__DanhGia__id_sanp__44FF419A" ManuallyRouted="false" />
+        <AssociationConnector Association="banhangModel.FK__SanPham__id_danh__398D8EEE" ManuallyRouted="false" />
+        <AssociationConnector Association="banhangModel.FK__DonHang__id_khac__3E52440B" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

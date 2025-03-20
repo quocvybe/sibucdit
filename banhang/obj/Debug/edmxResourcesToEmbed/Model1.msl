@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="banhangModelStoreContainer" CdmEntityContainer="banhangEntities">
+    <EntitySetMapping Name="ChiTietDonHangs">
+      <EntityTypeMapping TypeName="banhangModel.ChiTietDonHang">
+        <MappingFragment StoreEntitySet="ChiTietDonHang">
+          <ScalarProperty Name="id_chitietdonhang" ColumnName="id_chitietdonhang" />
+          <ScalarProperty Name="id_donhang" ColumnName="id_donhang" />
+          <ScalarProperty Name="id_sanpham" ColumnName="id_sanpham" />
+          <ScalarProperty Name="so_luong" ColumnName="so_luong" />
+          <ScalarProperty Name="gia" ColumnName="gia" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DanhGias">
+      <EntityTypeMapping TypeName="banhangModel.DanhGia">
+        <MappingFragment StoreEntitySet="DanhGia">
+          <ScalarProperty Name="id_danhgia" ColumnName="id_danhgia" />
+          <ScalarProperty Name="id_sanpham" ColumnName="id_sanpham" />
+          <ScalarProperty Name="id_khachhang" ColumnName="id_khachhang" />
+          <ScalarProperty Name="rating" ColumnName="rating" />
+          <ScalarProperty Name="nhanxet" ColumnName="nhanxet" />
+          <ScalarProperty Name="ngay_danhgia" ColumnName="ngay_danhgia" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DanhMucSanPhams">
+      <EntityTypeMapping TypeName="banhangModel.DanhMucSanPham">
+        <MappingFragment StoreEntitySet="DanhMucSanPham">
+          <ScalarProperty Name="id_danhmuc" ColumnName="id_danhmuc" />
+          <ScalarProperty Name="ten_danhmuc" ColumnName="ten_danhmuc" />
+          <ScalarProperty Name="mo_ta" ColumnName="mo_ta" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DonHangs">
+      <EntityTypeMapping TypeName="banhangModel.DonHang">
+        <MappingFragment StoreEntitySet="DonHang">
+          <ScalarProperty Name="id_donhang" ColumnName="id_donhang" />
+          <ScalarProperty Name="id_khachhang" ColumnName="id_khachhang" />
+          <ScalarProperty Name="ngay_dathang" ColumnName="ngay_dathang" />
+          <ScalarProperty Name="trangthai" ColumnName="trangthai" />
+          <ScalarProperty Name="tongtien" ColumnName="tongtien" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KhachHangs">
+      <EntityTypeMapping TypeName="banhangModel.KhachHang">
+        <MappingFragment StoreEntitySet="KhachHang">
+          <ScalarProperty Name="id_khachhang" ColumnName="id_khachhang" />
+          <ScalarProperty Name="ten_khachhang" ColumnName="ten_khachhang" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="so_dienthoai" ColumnName="so_dienthoai" />
+          <ScalarProperty Name="diachi" ColumnName="diachi" />
+          <ScalarProperty Name="matkhau_hash" ColumnName="matkhau_hash" />
+          <ScalarProperty Name="ngay_tao" ColumnName="ngay_tao" />
+          <ScalarProperty Name="thanhtoan" ColumnName="thanhtoan" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SanPhams">
+      <EntityTypeMapping TypeName="banhangModel.SanPham">
+        <MappingFragment StoreEntitySet="SanPham">
+          <ScalarProperty Name="id_sanpham" ColumnName="id_sanpham" />
+          <ScalarProperty Name="ten_sanpham" ColumnName="ten_sanpham" />
+          <ScalarProperty Name="mo_ta" ColumnName="mo_ta" />
+          <ScalarProperty Name="gia" ColumnName="gia" />
+          <ScalarProperty Name="so_luong_kho" ColumnName="so_luong_kho" />
+          <ScalarProperty Name="anh_sanpham" ColumnName="anh_sanpham" />
+          <ScalarProperty Name="id_danhmuc" ColumnName="id_danhmuc" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="banhangModel.sysdiagram">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
